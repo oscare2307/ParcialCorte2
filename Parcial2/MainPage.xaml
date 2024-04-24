@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Parcial2.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <Label Text="Monto De Prestamo" VerticalOptions="Center" TextColor="White"/>
+            <Entry x:Name="EntryPrestamo" VerticalOptions="Center"/>
+
+            <Label Text="Tasa de interes Anual" VerticalOptions="Center" TextColor="White"/>
+            <Entry x:Name="EntryTasa" VerticalOptions="Center" />
+
+            <Label Text="Periodo De Armotizacion (años)" VerticalOptions="Center" TextColor="White"/>
+            <Entry x:Name="EntryPeriodo" VerticalOptions="Center"/>
+
+            <Label Text="Pago Mensual" VerticalOptions="Center" TextColor="White"/>
+            <Entry x:Name="EntryPago" IsEnabled="False" VerticalOptions="Center" />
+
+            <Button Text="Calcular" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Blue"/>
+            <Button Text="Nuevo" Clicked="Button_Clicked_1" TextColor="Blue" BackgroundColor="White"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
